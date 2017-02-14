@@ -57,13 +57,13 @@ concatenarordenadas (x:xs) (y:ys) | x < y = [x] ++ concatenarordenadas (xs) (y:y
 				  | x > y = [y] ++ concatenarordenadas (x:xs) (ys) 
 				  | x == y = [x] ++ concatenarordenadas (xs) (ys) 
 
---dado un n, calcula 2^2
+--dado un n, calcula 2^n
 dosalan:: Int -> Int
 dosalan n | n==0 = 1
 	  | n==1 = 2
           | n>1 = 2* dosalan(n-1)
 
---Dado un numero, retorna su reprecentacion binaria
+--Dado un numero, retorna su representacion binaria
 numbinario:: Int -> [Int]
 numbinario x | x==1 = [1]
 	     | mod x 2 == 1 = numbinario (div x 2) ++ [1]
@@ -77,7 +77,7 @@ binarioespar x = last (numbinario x)==0
 cuadradoperfecto:: Int-> Bool
 cuadradoperfecto x = length [n | n <- [1..div x 2], n^2==x] == 1
 
---dada un elemento y una lista cuanta cuantas veces esta el elemento en la lista
+--dado un elemento y una lista cuanta cuantas veces esta el elemento en la lista
 elemlista::(Eq a) =>  a -> [a] -> Int
 elemlista a [] = 0
 elemlista a [x] | x == a = 1
