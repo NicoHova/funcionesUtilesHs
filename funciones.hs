@@ -1,7 +1,7 @@
 -- calcula el factorial de un numero
 fact:: Int->Int
-fact n | n==0 = 1
-       | n>0 = n*fact(n-1)
+fact n | n == 0 = 1
+       | n > 0 = n*fact(n-1)
 
 -- calcula los años que pasaron entre 2 fechas
 edad :: Int -> Int -> Int -> Int -> Int -> Int -> Int
