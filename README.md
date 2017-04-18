@@ -1,6 +1,6 @@
-##Algunas funciones útiles en el lenguaje Haskell que pueden ser utilizadas como una libreria
+## Algunas funciones útiles en el lenguaje Haskell que pueden ser utilizadas como una libreria
 
-###Índice:
+### Índice:
 - Factorial de un numero
 - Años que pasaron entre dos fechas
 - Cantidad de divisores entre 2 números
